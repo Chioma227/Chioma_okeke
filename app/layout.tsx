@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Comfortaa } from "next/font/google";
 import "@/styles/globals.scss";
+import Head from "next/head";
 
 const inter = Comfortaa({ subsets: ["latin"] });
 
@@ -16,6 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <Head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Noto+Sans+Tirhuta&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=The+Girl+Next+Door&display=swap"
+          key="google-font"
+        />
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );

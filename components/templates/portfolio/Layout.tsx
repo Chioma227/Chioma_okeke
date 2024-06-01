@@ -1,13 +1,15 @@
 import React from 'react'
+import Footer from '@/components/molecules/footer/Footer'
 import Header from '@/components/molecules/header/Header'
 
 const PortfolioLayout = ({ children }: {children:React.ReactNode}) => {
   return (
-    <main className='md:w-[80%] w-[95%] mx-auto relative'>
+    <main className='relative' >
       <Header />
-      <section>
+      <section className='md:w-[80%] w-[95%] mx-auto relative'>
         {children}
       </section>
+      <Footer/>
     </main>
   )
 }

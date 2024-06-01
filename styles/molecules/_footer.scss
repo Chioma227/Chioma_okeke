@@ -1,0 +1,82 @@
+.footer {
+  background-color: $footer;
+  .secOne {
+    @include mq(200px) {
+      padding: 3rem 0;
+    }
+    @include mq(471px) {
+      padding: 4rem 0;
+    }
+    .textone {
+      color: $wheat-transparent;
+      font-size: 11px;
+
+      @include mq(200px) {
+        margin-bottom: 10px;
+      }
+      @include mq(471px) {
+        margin-bottom: 20px;
+      }
+    }
+    .texttwo {
+      font-family: sans-serif;
+      color: $wheat;
+      margin-bottom: 20px;
+      @include mq(200px) {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        width: 85%;
+      }
+      @include mq(360px) {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 40px;
+        width: 80%;
+      }
+      @include mq(471px) {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 40px;
+        width: 60%;
+      }
+      @include mq(600px) {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 50px;
+        width: 50%;
+      }
+      @include mq(965px) {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 50px;
+        width: 30%;
+      }
+      span {
+        font-family: "Lovers Quarrel", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+    .textthree {
+      color: $wheat-transparent;
+      font-size: 12px;
+      margin-bottom: 30px;
+      width: 40%;
+      @include mq(200px) {
+        width: 100%;
+      }
+      @include mq(360px) {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+      @include mq(471px) {
+        width: 70%;
+        margin-bottom: 30px;
+      }
+      @include mq(600px) {
+        width: 50%;
+      }
+    }
+  }
+}

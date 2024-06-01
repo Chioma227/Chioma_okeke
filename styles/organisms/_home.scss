@@ -1,41 +1,39 @@
 .hero-header {
-  font-weight: 200;
+  font-weight: 500;
   font-family: sans-serif;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   margin: 0;
   color: $wheat;
-  @include mq(200px){
+  @include mq(200px) {
     font-size: 2rem;
   }
-  @include mq(597px){
+  @include mq(597px) {
     font-size: 4rem;
   }
-  @include mq(869px){
+  @include mq(869px) {
     font-size: 6rem;
-   
   }
 }
 .hero-caption {
   margin: 0;
-  
+
   font-size: 13px;
   text-align: center;
   color: $wheat;
   opacity: 0.6;
- 
-  @include mq(200px){
+
+  @include mq(200px) {
     margin-top: 0;
     width: 100%;
   }
-  @include mq(597px){
+  @include mq(597px) {
     width: 80%;
   }
-  @include mq(869px){
+  @include mq(869px) {
     margin-top: -20px;
     width: 50%;
-   
   }
 }
 .icon {
@@ -51,14 +49,6 @@
 }
 .home-service {
   margin: 4rem 0;
- 
-  .item {
-    background-color: rgba(107, 104, 97, 0.115);
-    border: 1px solid rgba(255, 225, 155, 0.115);
-    height: fit-content;
-    width: 100%;
-    padding: 20px;
-  }
   .label {
     font-size: 13px;
     font-weight: bolder;
@@ -79,20 +69,12 @@
     background-color: transparent;
   }
 }
-
-.service-container  {
+.item {
+  background-color: rgba(107, 104, 97, 0.115);
+  border: 1px solid rgba(255, 225, 155, 0.115);
+  height: fit-content;
+  width: 100%;
   transition: all;
-    transition-duration: 0.5s;
-  // :hover {
-  //   transition: all;
-  //   transition-duration: 0.5s;
-  //   box-shadow:0px 10px 88px -41px #dac5a791;
-  // }
-}
-.service-container :hover {
-
-    transition: all;
-    transition-duration: 0.5s;
-    box-shadow:0px 10px 88px -41px #dac5a791;
-
+  transition-duration: 0.5s;
+  padding: 20px;
 }

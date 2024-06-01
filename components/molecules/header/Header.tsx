@@ -24,7 +24,7 @@ const Header = () => {
         <div className='flex justify-center items-center'>
             <nav className={clsx(
                 isFixed ?
-                    "bg-stone-300 transition-all fixed bg-opacity-10 w-[100%] z-20 top-0 start-0 duration-75 header backdrop-blur-sm"
+                    "bg-stone-300 transition-all fixed bg-opacity-10 w-[100%] z-[1000] top-0 start-0 duration-75 header backdrop-blur-sm"
                     : "bg-stone-300 transition-all duration-75 bg-opacity-10 md:mt-[30px] md:w-fit w-[90%] mt-[10px] border-gray-200 border border-opacity-10 header backdrop-blur-sm"
             )}>
                 <div className="max-w-screen-xl flex items-center md:justify-around justify-between mx-auto p-4 gap-4">

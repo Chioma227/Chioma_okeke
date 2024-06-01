@@ -27,14 +27,14 @@ const HomeService = () => {
                     hidden: { opacity: 0, y: 100 }
                 }}
                 transition={{ duration: 0.8 }}
-                className='md:flex items-center block gap-[20px] h-[200px] service-container'>
+                className='md:flex items-center block gap-[20px] md:h-[200px] h-fit service-container '>
                 {serviceSchema.map((slug, i) => (
                     <motion.div
                         style={{ transitionDelay: `${i * 0.2}s` }}
                         whileInView={{ opacity: 1 }}
-                        key={slug.label} className='item'>
+                        key={slug.label} className='item hover:shadow-glow transition-all duration-200 cursor-pointer hover:border-wheat'>
                         <span className='label font-extralight'>{`0${slug.label}`}</span>
-                        <p className=' font-extralight name'>{slug.name}</p>
+                        <p className=' font-thin name'>{slug.name}</p>
                         <p className='desc'>{slug.description}</p>
                     </motion.div>
                 ))}

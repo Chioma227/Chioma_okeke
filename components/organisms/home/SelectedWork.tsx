@@ -4,7 +4,7 @@ import { projectData } from '@/helpers/helpers'
 
 const SelectedWork = () => {
     return (
-        <div className='grid grid-cols-2 gap-2 mt-[9rem]'>
+        <div className='grid grid-cols-2 gap-2 mt-[9rem] mb-[3rem]'>
             {projectData.map((slug, i) => (
                 <ProjectDisplayContainer
                     key={i}
