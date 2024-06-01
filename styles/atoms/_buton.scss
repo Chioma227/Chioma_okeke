@@ -1,0 +1,10 @@
+.button {
+  transition: all 0.2s ease-in;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: $wheat;
+  color: $black;
+  &:hover {
+  }
+}

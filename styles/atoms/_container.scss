@@ -1,0 +1,53 @@
+@import "../colors";
+@import "../fonts";
+
+$screen-width: 100%;
+
+.pflexed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 234, 183, 0.118);
+  backdrop-filter: blur(5px);
+  border: 0.5pt solid rgba(255, 233, 183, 0.123);
+  position: absolute;
+  width: 90%;
+  left: 30px;
+  bottom: 25px;
+  padding: 8px 20px;
+  z-index: 20;
+  color: $wheat;
+}
+.flexed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  // width: $screen-width;
+}
+
+.min-width {
+  height: 100vh;
+  width: 35%;
+}
+
+.flex_col_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex_col_start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
