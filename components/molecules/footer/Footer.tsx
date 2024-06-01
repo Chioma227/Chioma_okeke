@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className='w-full footer'>
             <section className='secOne text-center flex items-center justify-center flex-col'>
                 <p className='textone'>PROJECT IN MIND?</p>
-                <p className='texttwo'>Let's bring your <span>ideas to life.</span></p>
+                <p className='texttwo'>Let&apos;s bring your <span>ideas to life.</span></p>
                 <p className='textthree'>Translating design ideas into visually appealing websites and enhancing performance.</p>
                 <Button variant={ButtonVariant.DEFAULT}>GET IN TOUCH</Button>
             </section>
