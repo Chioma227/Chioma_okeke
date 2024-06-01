@@ -1,21 +1,42 @@
 .hero-header {
-  color: $wheat;
-  font-size: 6rem;
   font-weight: 200;
   font-family: sans-serif;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   margin: 0;
+  color: $wheat;
+  @include mq(200px){
+    font-size: 2rem;
+  }
+  @include mq(597px){
+    font-size: 4rem;
+  }
+  @include mq(869px){
+    font-size: 6rem;
+   
+  }
 }
 .hero-caption {
   margin: 0;
-  width: 50%;
+  
   font-size: 13px;
   text-align: center;
   color: $wheat;
   opacity: 0.6;
-  margin-top: -20px;
+ 
+  @include mq(200px){
+    margin-top: 0;
+    width: 100%;
+  }
+  @include mq(597px){
+    width: 80%;
+  }
+  @include mq(869px){
+    margin-top: -20px;
+    width: 50%;
+   
+  }
 }
 .icon {
   color: $wheat;

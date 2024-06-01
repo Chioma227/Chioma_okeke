@@ -68,12 +68,12 @@ const Hero = () => {
                 initial={{ y: 60, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ type: "tween", duration: 0.7 }}
-                className='flex items-center justify-center flex-col mt-[-150px] z-10'>
+                className='flex items-center justify-center flex-col md:mt-[-150px] sm:mt-[-100px] mt-[-70px] z-10'>
                 <p className='hero-header'>Web Developer</p>
                 <p className='hero-caption'>Translating design ideas into visually appealing websites and enhancing performance.</p>
             </motion.div>
             <div>
-                <section className='mt-[5rem] flex items-center justify-center gap-[60px]' >
+                <section className='md:mt-[5rem] sm:mt-[4rem] mt-[2rem] flex items-center justify-center gap-[60px] overflow-x-scroll [&::-webkit-scrollbar]:hidden' >
                     {stackSchema.map((slug, i) => (
                         <div key={i} className=' cursor-pointer text-[30px] icon'>
                             <p data-tooltip-id={slug.name} data-tooltip-content={slug.name} data-tooltip-place='top' >{slug.icon}</p>

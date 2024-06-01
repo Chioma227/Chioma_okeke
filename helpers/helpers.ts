@@ -25,7 +25,14 @@ interface homeServiceProps {
   label: number;
   description: string;
 }
-
+interface projectDataProps{
+  name:string,
+  imgSrc: string,
+  alt: string,
+  width:number,
+  height: number,
+  extension: string,
+}
 //array properties
 const linkSchema: linkschemaProps[] = [
   {
@@ -102,7 +109,41 @@ const serviceSchema: homeServiceProps[] = [
       "Thoroughly analyzing website to identify performance bottlenecks,by utilizing various methods like code minification and image optimization to streamline website code and reduce file sizes.",
   },
 ];
+const projectData: projectDataProps[]=[
+  {
+    name:"nova",
+    imgSrc:"proj3",
+    alt:"project3",
+    width:200,
+    height:200,
+    extension:"svg"
+  },
+  {
+    name:"solana",
+    imgSrc:"proj4",
+    alt:"project3",
+    width:200,
+    height:200,
+    extension:"svg"
+  },
+  {
+    name:"karepal",
+    imgSrc:"proj1",
+    alt:"project",
+    width:200,
+    height:200,
+    extension:"png"
+  },
+  {
+    name:"portfolio",
+    imgSrc:"proj2",
+    alt:"project2",
+    width:200,
+    height:200,
+    extension:"png"
+  },
+]
 
 
 //export schemas
-export {linkSchema, stackSchema, serviceSchema };
+export {linkSchema, stackSchema, serviceSchema, projectData };

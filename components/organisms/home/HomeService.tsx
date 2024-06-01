@@ -27,7 +27,7 @@ const HomeService = () => {
                     hidden: { opacity: 0, y: 100 }
                 }}
                 transition={{ duration: 0.8 }}
-                className='flex items-center gap-[20px] h-[200px] service-container'>
+                className='md:flex items-center block gap-[20px] h-[200px] service-container'>
                 {serviceSchema.map((slug, i) => (
                     <motion.div
                         style={{ transitionDelay: `${i * 0.2}s` }}
