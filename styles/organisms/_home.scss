@@ -92,3 +92,16 @@
   }
   gap: 20px;
 }
+.projects-title{
+  color: $wheat;
+  font-weight: 300;
+  @include mq(200px) {
+    font-size: 20px;
+  }
+  @include mq(869px) {
+    font-size: 25px;
+  }
+  span{
+    font-family: "Lovers Quarrel", cursive;
+  }
+}

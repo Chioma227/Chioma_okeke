@@ -17,7 +17,8 @@ const config: Config = {
         "glow":" 0px 10px 88px -41px #dac5a791"
       },
       colors:{
-        "wheat":"#dac5a744"
+        "wheat":"#dac5a744",
+        "wheat-bold":"#DAC5A7"
       }
     },
   },
