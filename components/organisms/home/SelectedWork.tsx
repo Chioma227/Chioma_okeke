@@ -12,7 +12,10 @@ const SelectedWork = () => {
             <Container variant={containerVariants.FLEX_BTWN}>
                 <p className='projects-title'>Selected <span>Work</span></p>
                 <Link href="/projects" className='flex items-center gap-1 font-light md:text-base text-[13px] text-wheat-bold'>
-                    <small>SEE ALL</small> <p className='border border-yellow-50 bg-yellow-100 bg-opacity-20 border-opacity-5 rounded-full w-6 h-6 flex items-center justify-center'><GoArrowUpRight /></p>
+                    <small>SEE ALL</small>
+                    <p className='border border-yellow-50 bg-yellow-100 bg-opacity-20 border-opacity-5 rounded-full w-6 h-6 flex items-center justify-center'>
+                        <GoArrowUpRight />
+                    </p>
                 </Link>
             </Container>
             <div className='mb-[3rem] mt-[10px] w-[100%] grid-container'>
