@@ -9,6 +9,7 @@ enum containerVariants{
     FLEXED,
     FLEX_COL,
     FLEX_START,
+    FLEX_BTWN,
     MIN_WIDTH,
 }
 export {ButtonVariant, containerVariants}

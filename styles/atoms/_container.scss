@@ -12,11 +12,18 @@ $screen-width: 100%;
   border: 0.5pt solid rgba(255, 233, 183, 0.123);
   position: absolute;
   width: 90%;
-  left: 30px;
-  bottom: 25px;
+
   padding: 8px 20px;
   z-index: 20;
   color: $wheat;
+  @include mq(200px) {
+    left: 15px;
+    bottom: 15px;
+  }
+  @include mq(622px) {
+    left: 30px;
+    bottom: 25px;
+  }
 }
 .flexed {
   display: flex;
@@ -36,7 +43,12 @@ $screen-width: 100%;
   height: 100vh;
   width: 35%;
 }
-
+.flex-btwn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
 .flex_col_center {
   display: flex;
   justify-content: center;

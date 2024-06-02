@@ -78,3 +78,17 @@
   transition-duration: 0.5s;
   padding: 20px;
 }
+.img-container{
+  width: fit-content;
+}
+
+.grid-container {
+  @include mq(200px) {
+    display: block;
+  }
+  @include mq(869px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  gap: 20px;
+}

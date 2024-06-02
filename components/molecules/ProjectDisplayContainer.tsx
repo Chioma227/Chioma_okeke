@@ -20,9 +20,9 @@ interface projectContainerProps {
 
 const ProjectDisplayContainer = ({ img, projectName }: projectContainerProps) => {
     return (
-        <main className='w-[30rem] border border-1 relative border-amber-100 border-opacity-10'>
-            <div className=''>
-                <Img {...img} className='w-[100%] object-cover' />
+        <main className='border border-1 relative border-amber-100 border-opacity-10 md:mb-0 mb-[10px]'>
+            <div className='img-container'>
+                <Img {...img} className='w-[100%] m-auto object-cover' />
             </div>
             <Container variant={containerVariants.PFLEXED}>
                 <p>{projectName}</p>

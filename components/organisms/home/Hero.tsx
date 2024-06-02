@@ -59,7 +59,7 @@ const Hero = () => {
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ type: "tween", duration: 0.7 }}
+                transition={{ type: "tween", duration: 0.9 }}
                 className='flex items-center justify-center mt-[-70px]'
             >
                 <Img src="hero" alt='hero' width={500} height={200} ext='png' />

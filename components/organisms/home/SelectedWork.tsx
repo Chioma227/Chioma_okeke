@@ -1,25 +1,37 @@
 import React from 'react'
 import ProjectDisplayContainer from '@/components/molecules/ProjectDisplayContainer'
 import { projectData } from '@/helpers/helpers'
+import Container from '@/components/atoms/container'
+import { GoArrowUpRight } from "react-icons/go";
+import Link from 'next/link'
+import { containerVariants } from '@/variants/rootVariants'
 
 const SelectedWork = () => {
     return (
-        <div className='grid grid-cols-2 gap-2 mt-[9rem] mb-[3rem]'>
-            {projectData.map((slug, i) => (
-                <ProjectDisplayContainer
-                    key={i}
-                    img={{
-                        src: slug.imgSrc,
-                        alt: slug.alt,
-                        width: slug.width,
-                        height: slug.height,
-                        ext: slug.extension,
-                        className:"w-full"
-                    }}
-                    projectName={slug.name}
-                />
-            ))}
-        </div>
+        <main className='md:mt-[9rem] mt-[6rem]'>
+            <Container variant={containerVariants.FLEX_BTWN}>
+                <p>Selected Work</p>
+                <Link href="/projects" className='flex items-center gap-1 font-light '>
+                    <small>SEE ALL</small> <p className='border border-yellow-50 bg-yellow-100 bg-opacity-20 border-opacity-5 rounded-full w-6 h-6 flex items-center justify-center'><GoArrowUpRight /></p>
+                </Link>
+            </Container>
+            <div className='mb-[3rem] mt-[10px] w-[100%] grid-container'>
+                {projectData.map((slug, i) => (
+                    <ProjectDisplayContainer
+                        key={i}
+                        img={{
+                            src: slug.imgSrc,
+                            alt: slug.alt,
+                            width: slug.width,
+                            height: slug.height,
+                            ext: slug.extension,
+                            className: " grid-item"
+                        }}
+                        projectName={slug.name}
+                    />
+                ))}
+            </div>
+        </main>
     )
 }
 

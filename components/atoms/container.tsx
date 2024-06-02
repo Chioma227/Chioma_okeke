@@ -8,7 +8,7 @@ interface CProps {
   children: string | ReactComponentElement<any, any>[] | ReactNode;
 }
 
-const { GRID, PFLEXED, FLEXED, FLEX_COL, FLEX_START, MIN_WIDTH, MAIN} = containerVariants;
+const { GRID, PFLEXED, FLEXED, FLEX_BTWN, FLEX_COL, FLEX_START, MIN_WIDTH, MAIN} = containerVariants;
 
 let style = "";
 
@@ -31,6 +31,9 @@ const Container = ({ variant, className, children }: CProps) => {
       break;
     case MIN_WIDTH:
       className = clsx(className, "min-width");
+      break;
+    case FLEX_BTWN:
+      className = clsx(className, "flex-btwn");
       break;
     case MAIN:
       className = clsx(className, "md:w-[75%] w-[100%] pl-[20px] pr-[20px] ml-auto mr-auto");

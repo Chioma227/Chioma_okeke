@@ -4,9 +4,9 @@ import Header from '@/components/molecules/header/Header'
 
 const PortfolioLayout = ({ children }: {children:React.ReactNode}) => {
   return (
-    <main className='relative' >
+    <main className='relative ' >
       <Header />
-      <section className='md:w-[80%] w-[95%] mx-auto relative'>
+      <section className='md:w-[80%] px-3 w-[95%] mx-auto relative'>
         {children}
       </section>
       <Footer/>

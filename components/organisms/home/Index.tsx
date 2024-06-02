@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <Hero/>
       <HomeService/>
-      {/* <SelectedWork/> */}
+      <SelectedWork/>
     </div>
   )
 }

@@ -128,19 +128,19 @@ const projectData: projectDataProps[]=[
   },
   {
     name:"karepal",
-    imgSrc:"proj1",
+    imgSrc:"proj3",
     alt:"project",
     width:200,
     height:200,
-    extension:"png"
+    extension:"svg"
   },
   {
     name:"portfolio",
-    imgSrc:"proj2",
+    imgSrc:"proj4",
     alt:"project2",
     width:200,
     height:200,
-    extension:"png"
+    extension:"svg"
   },
 ]
 
