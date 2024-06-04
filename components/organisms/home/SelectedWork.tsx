@@ -5,6 +5,7 @@ import Container from '@/components/atoms/container'
 import { GoArrowUpRight } from "react-icons/go";
 import Link from 'next/link'
 import { containerVariants } from '@/variants/rootVariants'
+import Icon from '@/components/atoms/Icon';
 
 const SelectedWork = () => {
     return (
@@ -13,9 +14,9 @@ const SelectedWork = () => {
                 <p className='projects-title'>Selected <span>Work</span></p>
                 <Link href="/projects" className='flex items-center gap-1 font-light md:text-base text-[13px] text-wheat-bold'>
                     <small>SEE ALL</small>
-                    <p className='border border-yellow-50 bg-yellow-100 bg-opacity-20 border-opacity-5 rounded-full w-6 h-6 flex items-center justify-center'>
+                    <Icon>
                         <GoArrowUpRight />
-                    </p>
+                    </Icon>
                 </Link>
             </Container>
             <div className='mb-[3rem] mt-[10px] w-[100%] grid-container'>

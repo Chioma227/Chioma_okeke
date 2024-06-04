@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import { ReactComponentElement, ReactNode, useState, useEffect } from "react";
+import { ReactComponentElement, ReactNode,  } from "react";
 
 interface Lprops {
   href: string;
@@ -10,12 +10,6 @@ interface Lprops {
 
 
 const AnchorLink = ({ children, className, href }: Lprops) => {
-
-  // const [isActive, setIsActive] = useState<boolean>(false)
-
-  // useEffect(() => {
-
-  // },[isActive])
 
   return <Link href={href} className={className}>{children}</Link>;
 };
