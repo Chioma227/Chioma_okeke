@@ -39,7 +39,7 @@ const Steps = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className='mt-[27rem] step-container'>
                         <p>Development</p>
-                        <p>I'll translate design assets and functionalities into code using HTML, CSS, and JavaScript framework like React.
+                        <p>I&apos;ll translate design assets and functionalities into code using HTML, CSS, and JavaScript framework like React.
                             This stage involves building reusable components, structuring website layouts, and implementing interactive elements.</p>
                     </motion.div>
                     <motion.div
