@@ -54,7 +54,7 @@ const Steps = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className='mt-[20rem] step-container'>
                         <p>Deployment</p>
-                        <p>Once testing is complete, I'll work with the team to deploy the website to a web hosting platform, making it accessible to the public.
+                        <p>Once testing is complete, I&apos;ll work with the team to deploy the website to a web hosting platform, making it accessible to the public.
                             This might involve configuration settings and launch procedures specific to the chosen hosting provider.</p>
                     </motion.div>
                 </section>
@@ -119,8 +119,8 @@ const Steps = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className='mt-[19rem] step-container'>
                         <p>Responsiveness and Cross-Browser Compatibility</p>
-                        <p>In this step, I'll ensure the website adapts seamlessly to different screen sizes (desktop, mobile, tablet) for optimal user experience across devices.
-                            I'll also test the website's functionality and appearance across various web browsers (Chrome, Firefox, Safari, etc.) to guarantee consistent performance.</p>
+                        <p>In this step, I&apos;ll ensure the website adapts seamlessly to different screen sizes (desktop, mobile, tablet) for optimal user experience across devices.
+                            I&apos;ll also test the website&apos;s functionality and appearance across various web browsers (Chrome, Firefox, Safari, etc.) to guarantee consistent performance.</p>
                     </motion.div>
                     <motion.div
                         ref={ref}
@@ -134,7 +134,7 @@ const Steps = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className='mt-[18rem] step-container'>
                         <p>Maintenance and Updates</p>
-                        <p>Depending on the project agreement, I could be involved in the website's maintenance, fixing bugs, implementing new features, or updating content as needed.</p>
+                        <p>Depending on the project agreement, I could be involved in the website&apos;s maintenance, fixing bugs, implementing new features, or updating content as needed.</p>
                     </motion.div>
 
                 </section>
@@ -201,7 +201,7 @@ const Steps = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className='mt-[6rem] step-container'>
                         <p>Development</p>
-                        <p>I'll translate design assets and functionalities into code using HTML, CSS, and JavaScript framework like React.
+                        <p>I&apos;ll translate design assets and functionalities into code using HTML, CSS, and JavaScript framework like React.
                             This stage involves building reusable components, structuring website layouts, and implementing interactive elements.</p>
                     </motion.div>
                      <motion.div
@@ -216,8 +216,8 @@ const Steps = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className='mt-[6rem] step-container'>
                         <p>Responsiveness and Cross-Browser Compatibility</p>
-                        <p>In this step, I'll ensure the website adapts seamlessly to different screen sizes (desktop, mobile, tablet) for optimal user experience across devices.
-                            I'll also test the website's functionality and appearance across various web browsers.</p>
+                        <p>In this step, I&apos;ll ensure the website adapts seamlessly to different screen sizes (desktop, mobile, tablet) for optimal user experience across devices.
+                            I&apos;ll also test the website&apos;s functionality and appearance across various web browsers.</p>
                     </motion.div>
                     <motion.div
                         ref={ref}
@@ -231,7 +231,7 @@ const Steps = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className='mt-[5rem] step-container'>
                         <p>Deployment</p>
-                        <p>Once testing is complete, I'll work with the team to deploy the website to a web hosting platform, making it accessible to the public.
+                        <p>Once testing is complete, I&apos;ll work with the team to deploy the website to a web hosting platform, making it accessible to the public.
                             This might involve configuration settings and launch procedures specific to the chosen hosting provider.</p>
                     </motion.div>
                     <motion.div
@@ -246,7 +246,7 @@ const Steps = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className='mt-[6rem] step-container'>
                         <p>Maintenance and Updates </p>
-                        <p>Depending on the project agreement, I could be involved in the website's maintenance, fixing bugs, implementing new features, or updating content as needed.</p>
+                        <p>Depending on the project agreement, I could be involved in the website&apos;s maintenance, fixing bugs, implementing new features, or updating content as needed.</p>
                     </motion.div>
                 </section>
             </Container>
