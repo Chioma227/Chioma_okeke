@@ -105,7 +105,12 @@
   }
 }
 .steps {
-  margin-top: 10rem;
+  @include mq(200px) {
+    margin-top: 5rem;
+  }
+  @include mq(869px) {
+    margin-top: 10rem;
+  }
   .steps--text-section {
     display: flex;
     align-items: center;
@@ -117,24 +122,90 @@
       text-transform: uppercase;
     }
     :nth-child(2) {
-      width: 40%;
       color: $wheat;
-      font-size: 60px;
-      font-weight: 300;
       margin-top: 20px;
-      line-height: 60px;
       text-align: center;
       margin-bottom: 10px;
+      @include mq(200px) {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 30px;
+        width: 80%;
+      }
+      @include mq(360px) {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 40px;
+        width: 80%;
+      }
+      @include mq(471px) {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 40px;
+        width: 60%;
+      }
+      @include mq(600px) {
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 50px;
+        width: 50%;
+      }
+      @include mq(965px) {
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 60px;
+        width: 40%;
+      }
       span {
         font-family: "Lovers Quarrel", cursive;
       }
     }
     :nth-child(3) {
-      width: 50%;
       font-size: 12px;
       text-align: center;
+      color: $wheat-transparent;
+      @include mq(200px) {
+        width: 100%;
+      }
+      @include mq(360px) {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+      @include mq(471px) {
+        width: 70%;
+        margin-bottom: 30px;
+      }
+      @include mq(600px) {
+        width: 50%;
+      }
+    }
+  }
+  .step-container {
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid $track;
+    background-color: $bg-blend;
+    :nth-child(1) {
+      color: $wheat;
+      font-weight: 300;
+      text-transform: uppercase;
+      @include mq(200px) {
+        font-size: 11px;
+        margin-bottom: 7px;
+      }
+      @include mq(600px) {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+    }
+    :nth-child(2) {
+      @include mq(200px) {
+        font-size: 12px;
+      }
+      @include mq(600px) {
+        font-size: 14px;
+      }
       color: $wheat-transparent;
     }
   }
 }
-

@@ -6,6 +6,7 @@ enum containerVariants{
     MAIN,
     GRID,
     PFLEXED,
+    FLEX,
     FLEXED,
     FLEX_COL,
     FLEX_START,

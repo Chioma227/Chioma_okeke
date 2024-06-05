@@ -19,9 +19,17 @@ const config: Config = {
       colors:{
         "wheat":"#dac5a744",
         "wheat-bold":"#DAC5A7"
+      },
+      screens:{
+        // "mxd":"626px",
+        "l":"1071px",
+        "s":"595px",
+        "xs":"477px",
+        "smx":"310px"
       }
     },
   },
   plugins: [],
 };
 export default config;
+

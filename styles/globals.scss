@@ -1,21 +1,23 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
 
 
 @import './fonts';
 @import './colors';
 @import './mixins';
-@import './typography';
 @import './spacing';
 @import './scrollBar';
+@import './typography';
 
-@import './atoms/buton';
-@import './atoms/container';
+
 @import './atoms/link';
+@import './atoms/buton';
+@import './atoms/loader';
+@import './organisms/home';
+@import './atoms/container';
 @import './molecules/header';
 @import './molecules/footer';
-@import './organisms/home';
 
 
 

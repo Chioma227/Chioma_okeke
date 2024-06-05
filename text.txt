@@ -82,7 +82,14 @@ Depending on the project agreement, I could be involved in the website's mainten
 
 
 
+#####screens:
 
+1071
+879
+769
+595
+477
+321
 
 
 
