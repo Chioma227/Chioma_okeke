@@ -1,8 +1,18 @@
+"use client"
 import Button from '@/components/atoms/button'
 import { ButtonVariant } from '@/variants/rootVariants'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Footer = () => {
+    let timeOfDay;
+    let timeHour = new Date().getHours()
+    const timeMinute = new Date().getMinutes()
+
+    if(timeHour < 12){
+        timeOfDay = "am"
+    }else{
+        timeOfDay = "pm"
+    }
     return (
         <footer className='w-full footer'>
             <section className='secOne text-center flex items-center justify-center flex-col'>
@@ -13,7 +23,7 @@ const Footer = () => {
             </section>
             <section className='flex items-center justify-between border border-t-2 border-opacity-5 border-yellow-50 py-[20px] px-[10px]'>
                 <small className='text-[10px]'>&copy; 2024. Made By Chioma Okeke.</small>
-                <p className='text-[10px]'>something here</p>
+                <p className='text-[10px]'>{`${timeHour} : ${timeMinute} ${timeOfDay}`} </p>
             </section>
         </footer>
     )

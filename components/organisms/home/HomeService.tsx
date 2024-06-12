@@ -1,44 +1,21 @@
 "use client"
-import React, { useEffect } from 'react'
-import { motion, useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+import React from 'react'
 import { serviceSchema } from '@/helpers/helpers'
 
 const HomeService = () => {
-    const controls = useAnimation();
-    const { ref, inView } = useInView();
-
-    useEffect(() => {
-        if (inView) {
-            controls.start("visible");
-        } else {
-            controls.start("hidden");
-        }
-    }, [controls, inView]);
-
-    return (
+       return (
         <main className='home-service'>
-            <motion.section
-                ref={ref}
-                initial="hidden"
-                animate={controls}
-                variants={{
-                    visible: { opacity: 1, y: 0 },
-                    hidden: { opacity: 0, y: 100 }
-                }}
-                transition={{ duration: 0.8 }}
+            <section
                 className='md:flex items-center block gap-[20px] md:h-[200px] h-fit service-container '>
                 {serviceSchema.map((slug, i) => (
-                    <motion.div
-                        style={{ transitionDelay: `${i * 0.2}s` }}
-                        whileInView={{ opacity: 1 }}
+                    <div
                         key={slug.label} className='item hover:shadow-glow transition-all duration-200 cursor-pointer hover:border-wheat'>
                         <span className='label font-extralight'>{`0${slug.label}`}</span>
                         <p className=' font-thin name'>{slug.name}</p>
                         <p className='desc'>{slug.description}</p>
-                    </motion.div>
+                    </div>
                 ))}
-            </motion.section>
+            </section>
         </main>
     )
 }
